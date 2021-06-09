@@ -20,10 +20,10 @@ class Footer extends Component {
         className="container-fluid px-0 py-0 mx-0 my-0 mobile-hidden"
         style={{ background: '#D9D9D9', color: '#9e9e9e' }}
       >
-        <footer style={{ padding: '40px', backgroundColor: '#e4e4e4'}}>
+        <footer className="footer1">
           <div className="footer-wrapper">
-          <p className="text-center text-t4 grey-900">
-              <a href="/userselfschedule">
+            <p className="text-t4 p-top">
+              <a href="/userselfschedule" className='grey-900'>
                 <span>Schedule My Delivery</span>
               </a>
             </p>
@@ -35,53 +35,52 @@ class Footer extends Component {
                   </a>
               </span>
             </p> */}
-            <p className="text-center text-t4 grey-900">
+            <p className="text-t4 p-top">
               <span>
-                <Link to="/Tracking#divTrackOrders">Track My Delivery</Link>
+                <Link to="/Tracking#divTrackOrders"><a className='grey-900'>Track My Delivery</a></Link>
               </span>
             </p>
-            <p className="text-center text-t4 grey-900">
+            <p className="text-t4 p-top">
               <span>
-                <a href="https://www.costco.com/">
+                <a href="https://www.costco.com/" className='grey-900'>
                   Costco.com
                   </a>
               </span>
             </p>
-            <p className="text-center text-t4 grey-900">
+            <p className="text-t4 p-top">
               <span>
-                <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" target='_blank' rel='noopener noreferrer'>
+                <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" target='_blank' rel='noopener noreferrer' className='grey-900'>
                   Customer Service
                   </a>
               </span>
             </p>
           </div>
-          <hr />
+          <hr style={{marginLeft: 16, marginRight: 16}}/>
 
-        <div className = "footer-wrapper">
-          {/* <div  className="col-md-12 col-lg-12"> */}
-          <p className="text-center text-t5 grey-800">
-              <a href="https://www.costco.com/privacy-policy.html">
-               Site Map
+          <div className="footer-wrapper">
+            {/* <div  className="col-md-12 col-lg-12"> */}
+            <p className="text-t5 p-bottom">
+              <a href="https://www.costco.com/privacy-policy.html" className='grey-800'>
+                Site Map
                 </a>
-          </p>
-          <p className="text-center text-t5 grey-800">
-              <a href="https://www.costco.com/privacy-policy.html">
+            </p>
+            <p className="text-t5 p-bottom">
+              <a href="https://www.costco.com/privacy-policy.html" className='grey-800'>
                 Terms & Conditions
-                
                 </a>
-          </p>
-          <p className="text-center text-t5 grey-800">
-              <a href="https://www.costco.com/privacy-policy.html">
+            </p>
+            <p className="text-t5 p-bottom">
+              <a href="https://www.costco.com/privacy-policy.html" className='grey-800'>
                 Your Privacy Rights
                 </a>
-          </p>
-          {/* </div> */}
+            </p>
+            {/* </div> */}
 
-        </div>
+          </div>
 
-          <div className="py-3 px-5 d-flex align-items-center">
+          <div className="py-3 d-flex align-items-center">
             <div className="col-md-12 col-lg-12">
-              <p className="text-center">
+              <p className="text-center text-bottom">
                 © 2020 - 2021 Costco Wholesale Corporation. All rights reserved.
               </p>
             </div>

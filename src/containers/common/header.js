@@ -32,7 +32,7 @@ class Header extends React.Component {
   }
 
   toggle(id) {
-    this.setState({[id]: !this.state[id]});
+    this.setState({ [id]: !this.state[id] });
   }
 
   onMouseEnter(e, i) {
@@ -131,7 +131,7 @@ class Header extends React.Component {
 
   closeBurgerMenu = (e) => {
     if (this.wrapperRef && !this.wrapperRef.current.contains(e.target)) {
-      this.setState({showBurgerMenu: false});
+      this.setState({ showBurgerMenu: false });
     }
   }
 
@@ -147,30 +147,26 @@ class Header extends React.Component {
     return (
       <div
         className="navbar-header nav-border"
-        ref = {this.wrapperRef}        
+        ref={this.wrapperRef}
       >
         <a className="navbar-brand logo-fix" href="/" style={{ padding: '1rem 0rem' }}>
           <img
             src={logo}
             alt="Costco Logistics"
-            className="img-fluid"
-            style={{
-              marginLeft: '10px',
-              marginTop: '5px',
-              paddingTop: '5px',
-              //width: '155px',
-              //height: '55px'
-            }}
+            className="logo"
           />
         </a>
         <div className="navbar-expand-sm navbar-light hide-sm">
           <button
             className="navbar-toggler"
             type="button"
-            style={{ marginRight: '20px', marginTop: '22px' }}
+            style={{
+              borderColor: 'transparent',
+            }}
             onClick={this.toggleBurgerMenu}
           >
             <span className="navbar-toggler-icon" />
+            <span className="text-t7" style={{ display: 'block' }}>Menu</span>
           </button>
         </div>
         <div className="nav navbar-lg-view navbar-nav pull-right">
@@ -186,12 +182,12 @@ class Header extends React.Component {
           </NavItem>
           <NavItem className="separator">
             <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-                Customer Service
+              Customer Service
               </a>
           </NavItem>
           <NavItem>
             <a href="https://www.costco.com/" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-            Costco.com
+              Costco.com
             </a>
           </NavItem>
           {/* <NavItem>
@@ -209,7 +205,7 @@ class Header extends React.Component {
           <div className="nav navbar-nav pull-right hide-sm">
             <NavItem>
               <Link to="/userselfschedule" className="nav-font" onClick={this.toggleBurgerMenu}>
-                Schedule My Delivert
+                Schedule My Delivery
               </Link>
             </NavItem>
             <NavItem>
@@ -218,17 +214,16 @@ class Header extends React.Component {
               </Link>
             </NavItem>
             <NavItem>
-            <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-            Customer Service
-
+              <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
+                Customer Service
               </a>
             </NavItem>
             <NavItem className="nav-item">
-            <a href="https://www.costco.com/" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-            Costco.com           
+              <a href="https://www.costco.com/" className="nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
+                Costco.com
             </a>
             </NavItem>
-           
+
           </div>
         </Nav>
       </div>
