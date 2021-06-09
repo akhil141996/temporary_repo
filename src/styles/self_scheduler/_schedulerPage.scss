@@ -1,0 +1,22 @@
+.react-datepicker__day--highlighted-custom-2 {
+  color: white;
+  background-color: red;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__day--highlighted-custom-1 {
+  color: white;
+  background-color: green;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+  border-radius: 0.3rem;
+  background-color: #216ba5;
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover {
+  background-color: #1d5d90;
+  border-radius: 0.3rem;
+}

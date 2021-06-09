@@ -1,0 +1,180 @@
+$color-orange : #2196F3;
+
+.panel-dimension{
+  min-height: 400px;
+  width: 100%;
+}
+
+.video-container {
+    width: 100%;
+    height: 500px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    align-content: right;
+}
+
+.video-overlay {
+    position: absolute;
+    left: 0px;
+    top: -30%;
+    bottom:2%;
+    min-height:100%;
+    min-width:144%;
+    overflow: hidden;
+}
+
+.footer_widget_container {
+	padding-top: 0 !important;
+}
+
+.footer_widget_container {
+	padding-bottom: 0 !important;
+}
+
+.footer-text-highlight {
+	line-height: 21px;
+	font-weight: bold;
+}
+
+///custom navbar css
+.navbar-custom {
+  background-color: #ffffff;
+  border-color: #eeeeee;
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-custom .navbar-brand {
+  color: #009ddc;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #0079a9;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #009ddc;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #009ddc;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: $color-orange;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: $color-orange;
+  background-color: #eeeeee;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #ededed;
+}
+.top-title-wrapper {
+  margin-top: 160px !important;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: $color-orange;
+  border-bottom-color: $color-orange;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #eeeeee;
+  color: $color-orange;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: $color-orange;
+  border-bottom-color: $color-orange;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #009ddc;
+  border-bottom-color: #009ddc;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #009ddc;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $color-orange;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: $color-orange;
+    background-color: #eeeeee;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #009ddc;
+}
+.navbar-custom .navbar-link:hover {
+  color: $color-orange;
+}
+
+.navbar-dropdown-custom {
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3E4551;
+}
+.containerright {
+    margin: 5px 5px 5px 10px; position:relative;
+}
+.header-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.innovelvideo{
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+
+}
+
+@media only screen and (max-width: 400px)
+{
+  .video-container {
+    height: 550px;
+  }
+
+  .video-overlay {
+    top: -20%;
+  }
+  
+  .top-title-wrapper {
+    margin-top: 100px !important;
+  }
+}

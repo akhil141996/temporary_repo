@@ -1,0 +1,168 @@
+/* Empty. Add your own CSS if you like */
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+$font-family: Muli;
+$color-orange: #f25e23;
+$color-blue: #009ddc;
+
+.font-muli{
+font-family: Muli;
+}
+
+div,span,h1,h2,h3,h4,h5,h6,p{
+  font-family: Muli;
+}
+
+strong{
+  display:inline!important;
+}
+
+.color-blue{
+  color: $color-blue;
+}
+
+.color-navyblue{
+	color: #34495e;
+  font-weight:normal;
+}
+
+.customLink {
+	text-decoration: underline;
+  }
+
+hr.delimiter {
+	height:2px;
+	color: #B4C0CF;
+	background-color: #B4C0CF;
+	border: 0px solid #B4C0CF;
+}
+
+a {
+	color: 'inherit';
+}
+
+.table{
+     width: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+	p {
+		margin: 0 15px;
+	}
+}
+
+hr.separator {
+	border: solid #e0e0e0;
+	border-width: 20px 0 0;
+}
+
+.text-t5 {
+	font-size: 16px;
+}
+
+.grey-800 {
+	color: grey;
+	font-weight: 800;
+}
+
+.text-t4 {
+	font-size: 18px;
+}
+
+.grey-900 {
+	color: grey;
+	font-weight: 900;
+}
+
+.text-xsmall{
+	font-size: 15px;
+}
+
+.text-small{
+	font-size: 20px;
+}
+
+.text-med{
+	font-size: 22px;
+}
+
+.text-big{
+	font-size: 24px;
+
+}
+.t1_align{
+margin-left: 0px;
+}
+
+.text-super{
+	font-size: 30px;
+}
+
+.text-h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.text-h3{
+	font-size: 38px;
+}
+
+.color-orange{
+	color: $color-orange;
+}
+
+.color-silver {
+	color: #bfbfbf;
+}
+
+.nav-font {
+  font-family: Muli;
+    font-size: 16px;
+    font-weight: 700;
+}
+.top-margin{
+  margin-top :0px!important;
+}
+.aboutline{
+  font-size: 22px;
+  margin-top: 0px;
+}
+.navbar-toggler{
+  position: fixed;
+   right: 0;
+   top:0;
+}
+
+@media only screen and (max-width: 400px)
+{	
+	.text-h1 {
+		width: 70%;
+	}
+
+	.text-h1 span {
+		font-size: 28px;
+	}
+
+	.top-title-wrapper {
+		margin-left: 0 !important;
+	}
+
+	.top-title{
+		margin-left: 0px;
+		font-size: 25px;
+	}
+
+	.text-h3{
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.text-med{
+		font-size: 20px;
+	}
+}

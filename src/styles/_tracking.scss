@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+$font-family: Muli;
+
+
+#innovelportal{
+	background-color: #FFFFFF;
+	font-family: Muli;
+}
+strong{
+	display: none;
+}
+.t1
+{
+	margin-left: 0px;
+}
+.inputtype{
+  font-size: 20px!important;
+}
+
+
+.shadowhr{
+  border:none;
+ width: 100%;
+ height: 50px;
+  box-shadow: 0 15px 20px -20px;
+}
+.json-to-table{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px;
+
+}
+
+td {
+    padding: 8px;
+    border:0px transparent !important;
+    font-size: 10px;
+      font-family: $font-family;
+  }
+
+
+  .json-to-table td, .json-to-table th {
+padding: 8px;
+    font-size: 16px;
+}
+hr.delimiter {
+	height:2px;
+	color: #B4C0CF;
+	background-color: #B4C0CF;
+	border: 0px solid #B4C0CF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+  height: 100%;
+}
+.content {
+  min-height: 80%;
+  height: auto !important; /*min-height hack*/
+  height: 100%;            /*min-height hack*/
+  margin-bottom: -4em;     /*Negates #push on longer pages*/
+}
+
+.push {
+  height: 4em;
+}
+
+.text-title {
+	font-size: 22px;
+	line-height:28px;
+}
+
+.text-status{
+	color: red;
+	font-weight: 500;
+	font-size: 20px;
+	font-family: 'Alegreya Sans';
+}
+
+td{
+	font-size: 20px;
+}
+
+.btn-submit {
+    color: #ffffff;
+	font-size: 20px;
+    background-color: #f25e23;
+    background-image: linear-gradient(to bottom, #f25e23, #f25e23);
+    border-color: #f25e23 #f25e23 #f25e23;
+}
+.btn-submit:hover {
+    color: #ffffff;
+	font-size: 20px;
+    background-color: #f25e23;
+    background-image: linear-gradient(to bottom, #f25e23, #c93600);
+    border-color: #f25e23 #f25e23 #f25e23;
+}
+
+#tb-tracking-results td,
+#tb-tracking-results th{
+	font-size: 16px;
+}
+
+.image-search{
+  height: 300px;
+  width: 100%;
+  }
+

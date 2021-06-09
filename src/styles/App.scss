@@ -1,0 +1,245 @@
+$color-blue: #00aeef;
+$color-blue-dark: #0d2035;
+$submenu-width: 180px;
+
+#mainAppEntry {
+  min-height: 100vh;
+}
+
+/*
+  Slide animation styles
+
+  You may need to add vendor prefixes for transform depending on your desired browser support.
+*/
+
+.slide-enter {
+  transform: translateY(-100%);
+  transition: 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+  &.slide-enter-active {
+    transform: translateY(0%);
+  }
+}
+
+.slide-leave {
+  transform: translateY(0%);
+  transition: 0.3s ease-in-out;
+
+  &.slide-leave-active {
+    transform: translateY(-100%);
+  }
+}
+
+/*
+  CSS for the submenu container, needed to adjust the behaviour to our needs.
+  Try commenting out this part to see how the animation looks without the container involved.
+*/
+
+.submenu-container {
+  height: 150px; // this value can be higher, but needs to be set
+  min-width: $submenu-width;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/*
+  Layout styles.
+
+  I like to work on stuff that's good looking so I remixed a cool simple menu by Mike Rojas (thanks!): https://codepen.io/mikerojas87/pen/rojKb
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  display: inline-block;
+  margin: 2rem auto 0;
+  background: $color-blue-dark;
+  color: #fff;
+  text-align: left;
+
+  a {
+    display: block;
+    padding: 0 16px;
+    line-height: inherit;
+    cursor: pointer;
+  }
+}
+
+.nav__menu {
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    background-color: $color-blue;
+
+    .nav__submenu {
+      display: block;
+    }
+  }
+}
+
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: $submenu-width;
+  background-color: $color-blue;
+}
+
+.nav__submenu-item {
+  &:hover {
+    background: rgba(#000, 0.1);
+  }
+}
+///custom navbar css
+.navbar-custom {
+  background-color: #ffffff;
+  border-color: #eeeeee;
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-custom .navbar-brand {
+  color: #009ddc;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #0079a9;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #009ddc;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #009ddc;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: $color-orange;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: $color-orange;
+  background-color: #eeeeee;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #ededed;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: $color-orange;
+  border-bottom-color: $color-orange;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #eeeeee;
+  color: $color-orange;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: $color-orange;
+  border-bottom-color: $color-orange;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #009ddc;
+  border-bottom-color: #009ddc;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #009ddc;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $color-orange;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: $color-orange;
+    background-color: #eeeeee;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #009ddc;
+}
+.navbar-custom .navbar-link:hover {
+  color: $color-orange;
+}
+
+.navbar-dropdown-custom {
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3e4551;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

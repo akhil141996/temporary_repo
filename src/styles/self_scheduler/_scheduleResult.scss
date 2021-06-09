@@ -1,0 +1,58 @@
+.scheduleResultMainContainer {
+  //background-color: lightgray;
+  min-height: 100vh;
+}
+
+.reportMainContainer {
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  //background-color: white;
+  flex-direction: column;
+}
+
+.mainProgressContainer {
+  justify-content: center;
+  margin: 10px;
+  width: inherit;
+}
+
+.mainTextContainer {
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.ordersTableContainer > table {
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px black;
+}
+
+.grayTick {
+  color: #2db7f5;
+  font-size: 30px;
+}
+
+.ordersTableContainer > .resultsTable > tr > td {
+  border: 1px black;
+}
+
+table,
+th,
+tr, td {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  font-size: 1.05em;
+}
+
+input[type='checkbox'][disabled] {
+  outline: 1px solid #2db7f5; // or whatever
+  color: #2db7f5;
+  background-color: #2db7f5;
+}
+// th > td {
+//   background-color: cadetblue;
+//   color: white;
+// }

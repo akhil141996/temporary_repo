@@ -1,0 +1,104 @@
+.centerAlign {
+  display: flex;
+  justify-content: center;
+}
+
+.h1Span {
+  color: #0094ff;
+  font-size: 0.8em;
+  line-height: 5px;
+  font-family: Calibri;
+}
+
+.customLink {
+  text-decoration: underline;
+}
+
+.tagLine {
+  color: #34495e;
+  font-size: 0.6em;
+  line-height: 5px;
+  font-family: Calibri;
+}
+
+.style39 {
+  color: #34495e;
+  font-family: 'Alegreya Sans';
+}
+
+.style113 {
+  height: 2px;
+  color: #b4c0cf;
+  background-color: #b4c0cf;
+  border: 0px solid #b4c0cf;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  box-sizing: content-box;
+  display: block;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  overflow: hidden;
+}
+
+.h2Style {
+  color: #f05283;
+  font-family: 'CenturyGothicStd-bold';
+  text-rendering: geometricPrecision;
+}
+
+.paraStyle {
+  text-align: left;
+  font-family: 'Open Sans Light', 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 25px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.selectAllOrdersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selectOrdersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderBody {
+  margin-top: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+input.largeCheckbox {
+  zoom: 1.75;
+}
+
+.selectButton {
+  margin: 0 auto;
+}
+
+.smallText {
+  display: none;
+}
+
+.truckImg {
+  margin-top: 26px;
+}
+
+@media (max-width: 1000px) {
+  .smallText{display: inline-block}
+  .fullText{display: none}
+}
+
+@media (max-width: 320px) {
+  .h1Span{font-size: 0.7em;}
+  .h2Style{font-size: 1.6em;}
+}
