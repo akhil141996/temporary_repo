@@ -1,13 +1,13 @@
 /* Empty. Add your own CSS if you like */
 
 
-@import url('https://fonts.googleapis.com/css?family=Muli');
-$font-family: Muli;
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');
+$font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $color-orange: #f25e23;
 $color-blue: #009ddc;
 
 .font-muli {
-	font-family: Muli;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 div,
@@ -19,7 +19,7 @@ h4,
 h5,
 h6,
 p {
-	font-family: Muli;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 strong {
@@ -56,7 +56,7 @@ a {
 
 .footer1 {
 	padding: 16px 0px 24px 0px;
-	background-color: #e4e4e4
+	background-color: #eeeeee !important;
 }
 
 .footer-wrapper {
@@ -151,7 +151,7 @@ a.grey-900 {
 }
 
 .nav-font {
-	// font-family: Muli;
+	font-family: $font-family;
 	font-size: 16px;
 }
 
@@ -192,7 +192,7 @@ a.grey-900 {
 	}
 }
 
-@media screen and (max-width: 320px) and (max-height: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 	.text-bottom {
 		font-size: 12px;
 		margin-left: 15px;
@@ -222,7 +222,7 @@ a.grey-900 {
 	}
 }
 
-@media screen and (max-width: 768px) and (max-height: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 	.text-bottom {
 		font-size: 12px;
 		margin-left: 15px;

@@ -18,7 +18,6 @@ class Footer extends Component {
       <div
         id="footer"
         className="container-fluid px-0 py-0 mx-0 my-0 mobile-hidden"
-        style={{ background: '#D9D9D9', color: '#9e9e9e' }}
       >
         <footer className="footer1">
           <div className="footer-wrapper">
@@ -27,14 +26,6 @@ class Footer extends Component {
                 <span>Schedule My Delivery</span>
               </a>
             </p>
-
-            {/* <p>
-              <span>
-                <a href="https://www.costco.com/privacy-policy.html">
-                  Your Privacy Rights
-                  </a>
-              </span>
-            </p> */}
             <p className="text-t4 p-top">
               <span>
                 <Link to="/Tracking#divTrackOrders"><a className='grey-900'>Track My Delivery</a></Link>
@@ -42,15 +33,15 @@ class Footer extends Component {
             </p>
             <p className="text-t4 p-top">
               <span>
-                <a href="https://www.costco.com/" className='grey-900'>
-                  Costco.com
+                <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" target='_blank' rel='noopener noreferrer' className='grey-900'>
+                  Customer Service
                   </a>
               </span>
             </p>
             <p className="text-t4 p-top">
               <span>
-                <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" target='_blank' rel='noopener noreferrer' className='grey-900'>
-                  Customer Service
+                <a href="https://www.costco.com/" className='grey-900'>
+                  Costco.com
                   </a>
               </span>
             </p>
