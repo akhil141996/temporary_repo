@@ -159,14 +159,16 @@ class Header extends React.Component {
         </a>
         <div className="navbar-expand-sm navbar-light hide-sm">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler custom-toggler"
             type="button"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation"
             style={{
               borderColor: 'transparent',
             }}
             onClick={this.toggleBurgerMenu}
           >
-            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon"></span>
             <span className="text-t7" style={{ display: 'block' }}>Menu</span>
           </button>
         </div>
