@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import logo from '../../images/costco_logistics.png';
+import logo from '../../images/Logistics.svg';
 import '../../styles/_header.scss';
 class Header extends React.Component {
   constructor(props) {
@@ -136,6 +136,10 @@ class Header extends React.Component {
     }
   }
 
+  closeHamBurgerMenu = () => {
+    this.setState({ showBurgerMenu: false });
+  }
+
   toggleBurgerMenu = () => {
     this.setState({ showBurgerMenu: !this.state.showBurgerMenu })
   }
@@ -155,6 +159,8 @@ class Header extends React.Component {
             src={logo}
             alt="Costco Logistics"
             className="logo"
+            width={280}
+            height={50}
           />
         </a>
         <div className="navbar-expand-sm navbar-light hide-sm">
@@ -200,48 +206,52 @@ class Header extends React.Component {
           </NavItem> */}
 
         </div>
-        <Nav
+        <div
           onMouseLeave={this.onMouseLeave.bind(this, 1)}
-          className={`navbar navbar-toggleable-md navbar-fixed-top justify-content-end navbar-custom ${this.state.showBurgerMenu ? 'show' : ''}`}
-          style={{
-            float: 'right',
-            position: 'relative',
-            top: 0,
-            bottom: 0,
-            left: -26,
-            marginTop: 220,
-            marginRight: -30,
-            right: 40,
-            border: "1px solid #9c9c9c",
-            padding: 0,
-            boxShadow: "0px 5px 10px #333333",
-            blur: 10
-          }}
+          className={`${this.state.showBurgerMenu ? 'overlay' : ''}`}
+          onClick={(e) => this.closeHamBurgerMenu(e)}
         >
-          <div className="nav navbar-nav pull-right hide-sm">
-            <NavItem className="menu-nav-item">
-              <Link to="/userselfschedule" className="menu-nav-font" onClick={this.toggleBurgerMenu}>
-                Schedule My Delivery
+          <Nav
+            onMouseLeave={this.onMouseLeave.bind(this, 1)}
+            className={`navbar navbar-toggleable-md navbar-fixed-top justify-content-end animate navbar-custom ${this.state.showBurgerMenu ? 'show' : ''}`}
+            style={{
+              float: 'right',
+              position: 'relative',
+              marginTop: 50,
+              border: "1px solid #9c9c9c",
+              padding: 0,
+              boxShadow: "0px 5px 10px #333333",
+              blur: 10,
+            }}
+          >
+            <div className="nav navbar-nav pull-right hide-sm" style={{
+              width: "100%",
+              padding: "0px 20px 0px 20px"
+            }}>
+              <NavItem className="menu-nav-item">
+                <Link to="/userselfschedule" className="menu-nav-font" onClick={this.toggleBurgerMenu}>
+                  Schedule My Delivery
               </Link>
-            </NavItem>
-            <NavItem className="menu-nav-item">
-              <Link to="/tracking#divTrackOrders" className="menu-nav-font" onClick={this.toggleBurgerMenu}>
-                Track My Delivery
+              </NavItem>
+              <NavItem className="menu-nav-item">
+                <Link to="/tracking#divTrackOrders" className="menu-nav-font" onClick={this.toggleBurgerMenu}>
+                  Track My Delivery
               </Link>
-            </NavItem>
-            <NavItem className="menu-nav-item">
-              <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" className="menu-nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-                Customer Service
+              </NavItem>
+              <NavItem className="menu-nav-item">
+                <a href="https://customerservice.costco.com/app/answers/detail_l/a_id/9831" className="menu-nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
+                  Customer Service
               </a>
-            </NavItem>
-            <NavItem className="menu-nav-item">
-              <a href="https://www.costco.com/" className="menu-nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
-                Costco.com
+              </NavItem>
+              <NavItem className="menu-nav-item">
+                <a href="https://www.costco.com/" className="menu-nav-font" target='_blank' rel='noopener noreferrer' onClick={this.toggleBurgerMenu}>
+                  Costco.com
             </a>
-            </NavItem>
+              </NavItem>
 
-          </div>
-        </Nav>
+            </div>
+          </Nav>
+        </div>
       </div>
     );
   }
