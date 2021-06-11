@@ -46,7 +46,7 @@ class Footer extends Component {
               </span>
             </p>
           </div>
-          <hr style={{marginLeft: 16, marginRight: 16}}/>
+          <hr style={{ marginLeft: 16, marginRight: 16 }} />
 
           <div className="footer-wrapper">
             {/* <div  className="col-md-12 col-lg-12"> */}
@@ -72,7 +72,7 @@ class Footer extends Component {
           <div className="py-3 d-flex align-items-center">
             <div className="col-md-12 col-lg-12">
               <p className="text-center text-bottom">
-                © 2020 - 2021 Costco Wholesale Corporation. All rights reserved.
+                © {new Date().getFullYear() - 1} - {new Date().getFullYear()} Costco Wholesale Corporation. All rights reserved.
               </p>
             </div>
           </div>
